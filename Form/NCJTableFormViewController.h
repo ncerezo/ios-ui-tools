@@ -14,10 +14,10 @@
    limitations under the License.
 */
 
-#import <Foundation/Foundation.h>
-#import "NCJUITheme.h"
+#import <UIKit/UIKit.h>
 
+@interface NCJTableFormViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@interface NCJMainUITheme : NCJUITheme
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

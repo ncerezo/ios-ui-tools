@@ -23,10 +23,11 @@
 		66E89AB8A330DD02BB5C9F99 /* UIViewController+NCJKeyboardAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E898FF879D2B3852EF7145 /* UIViewController+NCJKeyboardAccessory.m */; };
 		66E89B9115143F8ECB011223 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E894DB01FC4C1BBADBC816 /* Main_iPad.storyboard */; };
 		66E89B9A0C87C1D1D91C060A /* NCJMainUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E89F85070F6991F387D5DC /* NCJMainUITheme.m */; };
-		66E89BBEDC669BFFBF528AA9 /* NCJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8969EC9A3AE707811FFE6 /* NCJViewController.m */; };
+		66E89BBEDC669BFFBF528AA9 /* NCJTableFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8969EC9A3AE707811FFE6 /* NCJTableFormViewController.m */; };
 		66E89C50D0F3D75365ED5D72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E89E769D4FFA9C96780FC3 /* CoreGraphics.framework */; };
 		66E89C5D00210053BCCEEAAD /* NCJAppSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E89F0674378305639D8CCD /* NCJAppSingleton.m */; };
 		66E89C702646246FFE95FAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66E89E8F2E7B1546FF178826 /* Localizable.strings */; };
+		66E89CA05BAB0AD9B11ADAC8 /* NCJSimpleFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E89577E77B89C45ED3E36D /* NCJSimpleFormViewController.m */; };
 		66E89D1EB70835913DE3ED83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E892DB4505C3208DF4489D /* XCTest.framework */; };
 		66E89DD679546A8CD04CBC10 /* UITextField+NCJExtendedAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E89640204CEF298AFD5134 /* UITextField+NCJExtendedAttributes.m */; };
 		66E89DF14AC63DFCF47132B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E89C3BAFE5C6003036106C /* UIKit.framework */; };
@@ -54,16 +55,18 @@
 		66E893AEA041AC9E881DCCD6 /* NCJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCJAppDelegate.h; sourceTree = "<group>"; };
 		66E894E96FA2BC7588A09D68 /* UIColor+NCJColorWithARGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NCJColorWithARGB.m"; sourceTree = "<group>"; };
 		66E89555C005B702E7A1B97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		66E89577E77B89C45ED3E36D /* NCJSimpleFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCJSimpleFormViewController.m; sourceTree = "<group>"; };
 		66E89640204CEF298AFD5134 /* UITextField+NCJExtendedAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NCJExtendedAttributes.m"; sourceTree = "<group>"; };
-		66E8969EC9A3AE707811FFE6 /* NCJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCJViewController.m; sourceTree = "<group>"; };
+		66E8969EC9A3AE707811FFE6 /* NCJTableFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCJTableFormViewController.m; sourceTree = "<group>"; };
 		66E89753212A3A7EF99211C6 /* NSUserDefaults+NCJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+NCJAdditions.h"; sourceTree = "<group>"; };
 		66E898A1F175CBB795F9C8B6 /* NSObject+NCJProtocolOptionalMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NCJProtocolOptionalMethod.m"; sourceTree = "<group>"; };
 		66E898FF879D2B3852EF7145 /* UIViewController+NCJKeyboardAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NCJKeyboardAccessory.m"; sourceTree = "<group>"; };
 		66E8991A71B04B254690D475 /* NCJUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCJUITheme.h; sourceTree = "<group>"; };
 		66E89945CA8050DF4CE937EB /* FormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "FormTests-Info.plist"; sourceTree = "<group>"; };
-		66E899A441BC2C7AB13DD167 /* NCJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCJViewController.h; sourceTree = "<group>"; };
+		66E899A441BC2C7AB13DD167 /* NCJTableFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCJTableFormViewController.h; sourceTree = "<group>"; };
 		66E899C3F1064334CD6FD3CE /* NCJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCJAppDelegate.m; sourceTree = "<group>"; };
 		66E89AAEA0EB65805A654282 /* UIColor+NCJColorWithARGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NCJColorWithARGB.h"; sourceTree = "<group>"; };
+		66E89ADF47A0821EB5551C69 /* NCJSimpleFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCJSimpleFormViewController.h; sourceTree = "<group>"; };
 		66E89B90D5A4F202DE68B581 /* NCJAppSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCJAppSingleton.h; sourceTree = "<group>"; };
 		66E89B9F1204D6D967C2DC95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66E89C0C1EEA194282835773 /* Form-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Form-Prefix.pch"; sourceTree = "<group>"; };
@@ -155,12 +158,14 @@
 				66E89E8E14576EF426EE4B00 /* Images.xcassets */,
 				66E89D0D3F86250F181699AD /* Main_iPhone.storyboard */,
 				66E894DB01FC4C1BBADBC816 /* Main_iPad.storyboard */,
-				66E899A441BC2C7AB13DD167 /* NCJViewController.h */,
-				66E8969EC9A3AE707811FFE6 /* NCJViewController.m */,
+				66E899A441BC2C7AB13DD167 /* NCJTableFormViewController.h */,
+				66E8969EC9A3AE707811FFE6 /* NCJTableFormViewController.m */,
 				66E89E8F2E7B1546FF178826 /* Localizable.strings */,
 				66E89F85070F6991F387D5DC /* NCJMainUITheme.m */,
 				66E89D8BC1545DCC111C9507 /* NCJMainUITheme.h */,
 				66E89ED04502A08AD6DFE598 /* ios-ui-tools */,
+				66E89577E77B89C45ED3E36D /* NCJSimpleFormViewController.m */,
+				66E89ADF47A0821EB5551C69 /* NCJSimpleFormViewController.h */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -300,7 +305,7 @@
 			files = (
 				66E897487B969EC707F52E0F /* main.m in Sources */,
 				66E8904BC35EA0E36144A85F /* NCJAppDelegate.m in Sources */,
-				66E89BBEDC669BFFBF528AA9 /* NCJViewController.m in Sources */,
+				66E89BBEDC669BFFBF528AA9 /* NCJTableFormViewController.m in Sources */,
 				66E89B9A0C87C1D1D91C060A /* NCJMainUITheme.m in Sources */,
 				66E89822D15A12BB7F16BC69 /* NSObject+NCJProtocolOptionalMethod.m in Sources */,
 				66E89A1CF45B0E42A5B529BE /* NSUserDefaults+NCJAdditions.m in Sources */,
@@ -309,6 +314,7 @@
 				66E89C5D00210053BCCEEAAD /* NCJAppSingleton.m in Sources */,
 				66E89AB8A330DD02BB5C9F99 /* UIViewController+NCJKeyboardAccessory.m in Sources */,
 				66E8917490203DF616FB842C /* UIColor+NCJColorWithARGB.m in Sources */,
+				66E89CA05BAB0AD9B11ADAC8 /* NCJSimpleFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

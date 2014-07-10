@@ -15,9 +15,16 @@
 */
 
 #import <Foundation/Foundation.h>
-#import "NCJUITheme.h"
 
+#import "UIViewController+NCJKeyboardAccessory.h"
 
-@interface NCJMainUITheme : NCJUITheme
+@interface NCJSimpleFormViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UITextField  *textField1;
+@property (strong, nonatomic) IBOutlet UITextField  *textField2;
+@property (strong, nonatomic) IBOutlet UITextField  *textField3;
+@property (strong, nonatomic) IBOutlet UILabel      *label;
+@property (strong, nonatomic) IBOutlet UIView       *containerView;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

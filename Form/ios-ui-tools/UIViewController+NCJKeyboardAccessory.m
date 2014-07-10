@@ -1,8 +1,18 @@
-//
-// Created by Narciso Cerezo Jiménez on 08/07/14.
-// Copyright (c) 2014 Narciso Cerezo. All rights reserved.
-//
+/*
+   Copyright (c) 2014 Narciso Cerezo. All rights reserved.
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
 
 #import "UIViewController+NCJKeyboardAccessory.h"
 #import "NCJUITheme.h"
@@ -285,11 +295,11 @@ static void *NCJKeyboardAccessoryNextImageNameKey ;
                     self.ncj_currentTextFieldIndexPath = path;
                 }
             }
-            [self updatePrevNextButtonState];
         }
         if( !textField.inputAccessoryView ) {
             textField.inputAccessoryView = [self ncj_inputAccessoryToolbar];
         }
+        [self updatePrevNextButtonState];
     }
     if( self.ncj_textFieldDelegate ) {
         [self.ncj_textFieldDelegate performBlock:^{
@@ -433,18 +443,16 @@ static void *NCJKeyboardAccessoryNextImageNameKey ;
 - (void)updatePrevNextButtonState {
     self.ncj_nextButton.enabled = NO;
     self.ncj_previousButton.enabled = NO;
-    if( self.ncj_currentTextFieldIndexPath ) {
-        NSArray *sortedFields = self.ncj_sortedTextFields;
-        UITextField *currentTextField = self.ncj_currentTextField;
-        if( sortedFields && currentTextField ) {
-            NSUInteger index = [sortedFields indexOfObject:currentTextField];
-            if( index == NSNotFound ) {
-                index = [sortedFields indexOfObject:self.ncj_currentTextFieldIndexPath];
-            }
-            if( index != NSNotFound ) {
-                self.ncj_nextButton.enabled = index < (sortedFields.count - 1);
-                self.ncj_previousButton.enabled = index > 0;
-            }
+    NSArray *sortedFields = self.ncj_sortedTextFields;
+    UITextField *currentTextField = self.ncj_currentTextField;
+    if( sortedFields && currentTextField ) {
+        NSUInteger index = [sortedFields indexOfObject:currentTextField];
+        if( index == NSNotFound ) {
+            index = [sortedFields indexOfObject:self.ncj_currentTextFieldIndexPath];
+        }
+        if( index != NSNotFound ) {
+            self.ncj_nextButton.enabled = index < (sortedFields.count - 1);
+            self.ncj_previousButton.enabled = index > 0;
         }
     }
 }
